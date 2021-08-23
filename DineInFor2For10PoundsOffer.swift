@@ -1,9 +1,8 @@
 ///Buy one item from each category and pay just £10
 class DineInFor2For10PoundsOffer : SelectionOffer {
-    var productIdGroups: Set<Set<Int>>
     
+    var productIdGroups: Set<Set<Int>>
     var maxPrice: Int
-
     var name: String
     
     init(){

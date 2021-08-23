@@ -1,5 +1,6 @@
 ///Buy a certain number if items from of each group and pay £20.99 (e.g. 2 pizzas, 2 sides, 1 garlic bread and 1 dessert)
 class WinterWarmerOffer : ComplexSelectionOffer {
+    
     var productIdGroupsAndQuantities: Array<(items: Set<Int>, quantity: Int)>
     var maxPrice: Int
     var name: String
