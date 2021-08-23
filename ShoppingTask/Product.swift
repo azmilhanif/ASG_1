@@ -1,9 +1,12 @@
 class Product : Equatable, Hashable, Comparable {
     
+    /** The name of a product, as would be shown on a receipt*/
     var name :String
     
-    /** Price, in pence*/
+    /** Price, in pence */
     var price :Int
+    
+    /** Unique id of a product, akin to a bar code */
     var id :Int
     
     init(_ name:String, price:Int, id:Int){

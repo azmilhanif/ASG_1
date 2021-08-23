@@ -1,16 +1,26 @@
 class Transaction {
     
+    /**
+     Whether coupons (such as 10p off) can be used for the transaction
+     */
     var couponsEnabled = false
+    
+    /**
+     All the products being purchased (i.e. the items put through the till)
+     */
     var items = [Product]()
     
+    /**
+     Adds up the price of all products in the items collection (without any discount being applied)
+     */
     func priceBeforeDiscounts() -> Int{
-        
-        
-
-        //sum up the price of all items
+        //TODO: Implement method to calculate price before discounts are applied
         return 0
     }
     
+    /**
+     Calculates the total discount for the products in items
+     */
     func discount() -> Int{
         
         let discounts = Discounter(couponsEnabled: couponsEnabled).offerDiscounts(list: items)
@@ -21,10 +31,12 @@ class Transaction {
         return  total;
     }
     
+    /**
+     Returns the final price, that is the price before discount with the discount subtracted
+     */
     func finalPrice() -> Int{
         
-        
-        
+        //TODO: Implement method to calculate final price
         return 0
     }
     
