@@ -15,7 +15,13 @@ class Transaction {
      */
     func priceBeforeDiscounts() -> Int{
         //TODO: Implement method to calculate price before discounts are applied
-        return 0
+        var totalPrice = 0
+        
+        for i in items {
+            totalPrice += i.price
+        }
+        
+        return totalPrice
     }
     
     /**
@@ -23,8 +29,10 @@ class Transaction {
      */
     func discount() -> Int{
         
-        let discounts = Discounter(couponsEnabled: couponsEnabled).offerDiscounts(list: items)
+        let  discounts = Discounter(couponsEnabled: couponsEnabled).offerDiscounts(list: items)
+        
         var total = 0;
+        
         for discount in discounts {
             total += discount.valueInPence;
         }
@@ -36,8 +44,8 @@ class Transaction {
      */
     func finalPrice() -> Int{
         
-        //TODO: Implement method to calculate final price
-        return 0
+        
+        return priceBeforeDiscounts() - discount()
     }
     
     

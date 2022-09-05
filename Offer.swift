@@ -133,7 +133,20 @@ protocol TriggerMultiBuy : TriggerOffer, MultiBuyOffer {
     
 }
 
-
+/**
+ Represents a type of offer where a certain number of items in the offer must be bought, and this will enable a percentage discount to be applied (for example, Buy 2 get 30% off).
+ */
+protocol MultiBuyByPercentageOffer : SimpleOffer  {
+    /** The number of products that must be paid for*/
+    var quantityPaid : Int {get set}
+    /**
+    *Represents the percentage discount applied, on a per-product basis, e.g. 0.5 is 50%*
+     - important: The value must be between 0 and 1
+     - important: The discount must be calculated on a per-product basis
+     */
+    var discountPercentage : Double {get set}
+    
+}
 
 //todo: Offer for specific quantities of trigger products and get specific quantities of free products, e.g. buy any television, any blu-ray player and 2 HDMI cables, recieve a free soundbar and 5 blue-ray discs of your choice
 

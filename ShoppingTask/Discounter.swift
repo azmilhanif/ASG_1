@@ -13,13 +13,11 @@ class Discounter {
         
         offers.append(HalfPriceOffer())
         offers.append(BuyOneGetOneFreeOffer())
-        offers.append(ThreeMeatsForTenPoundOffer())
+        offers.append(FreeTableSauceWithMeatOffer())
+        offers.append(TwentyPercentOffThreePacksOfVegOffer())
         offers.append(FreeWaterWithNewspaperOffer())
         offers.append(BuyTwoGetThirdFreeOffer())
-        offers.append(FreeSoftenerWithDetergentOffer())
-        offers.append(DineInFor2For10PoundsOffer())
-        offers.append(WinterWarmerOffer())
-       
+
     }
     
     func offerDiscounts(list: [Product]) -> [OfferDetail]{

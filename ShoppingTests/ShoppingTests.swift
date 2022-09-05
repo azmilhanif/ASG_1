@@ -1,6 +1,6 @@
 import XCTest
 
-class A_ShoppingTests: XCTestCase {
+class A_TransactionTests: XCTestCase {
     
     var transaction : Transaction!
     

@@ -11,6 +11,13 @@ class HalfPriceOffer : DiscountedPriceOffer {
         discountPercentage = 0.5
     }
     func applies(to purchases: [Product]) -> Bool {
+        
+        if  purchases. == productIds
+        
+            return true
+        }
+        
+        
         return false
     }
     

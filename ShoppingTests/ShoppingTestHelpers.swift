@@ -7,7 +7,7 @@ class Helper{
     static let shared = Helper()
     
     private init(){
-        let bundle = Bundle(for: A_ShoppingTests.self)
+        let bundle = Bundle(for: A_TransactionTests.self)
         let fileLocation = bundle.path(forResource: "Products", ofType: "plist")
         
         let productArray = NSArray(contentsOfFile: fileLocation!)
@@ -109,5 +109,9 @@ class P {
     static let potatoWedges = Helper.shared.productById(2003)!
     static let doughBalls = Helper.shared.productById(2006)!
     static let cookies = Helper.shared.productById(2007)!
+    
+    //table sauce
+    static let mayo = Helper.shared.productById(54322)!
+    static let ketchup = Helper.shared.productById(54321)!
 }
 

@@ -10,6 +10,8 @@ class TenPenceOffOffer : MoneyOffOffer {
     }
     
     func applies(to list: [Product]) -> Bool {
+        
+        
         return !list.isEmpty //must actually buy something to get discount, assumes no free products!
     }
     

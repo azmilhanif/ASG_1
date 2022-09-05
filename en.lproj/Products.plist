@@ -4,6 +4,22 @@
 <array>
 	<dict>
 		<key>Name</key>
+		<string>Ketchup</string>
+		<key>Price</key>
+		<integer>149</integer>
+		<key>ProdId</key>
+		<integer>54321</integer>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Mayo</string>
+		<key>Price</key>
+		<integer>99</integer>
+		<key>ProdId</key>
+		<integer>54322</integer>
+	</dict>
+	<dict>
+		<key>Name</key>
 		<string>Bread</string>
 		<key>Price</key>
 		<integer>100</integer>
